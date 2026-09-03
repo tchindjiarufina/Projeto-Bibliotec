@@ -125,7 +125,7 @@ a {
 
  /*Seção beneficios*/
 
- .beneficios
+ #quem-somos
  {
     padding: 50px 120px;
 
@@ -232,27 +232,117 @@ a {
     color: var(--branco);
 }
 
-.livros
-{
-     padding: 50px 120px;
-
-    display: flex;
+.livros{
+   
+    display: flex ;
     flex-direction: column;
+    
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
 
+.livros-lista {
+    display: flex;
+    grid-template-rows: repeat(3, 20%);
+    gap: 10%;
+    justify-content: center;
+}
+
+ .livros-lista
+ {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+ }
+
+ .livros-lista h2
+ {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+ }
+
+ .livros-lista span
+ {
+    display: flex;
+    width: 250px;
+    height: 4px;
+    background-color: var(--cor-destaque);
+ }
+
+ .livros h3
+ {
     align-items: center;
 
+ }
+
+.rodape
+{
+    background-color: var(--azul-escuro);
+    padding: 50px 150px;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+.rodape p
+{
+color: var(--branco);
+}
+
+.rodape span
+{
+    background-color: var(--branco);
+    width: 100%;
+    height: 2px;
+}
+
+.topo
+{
+    display: flex;
     justify-content: space-between;
 
-    gap: 100px;
 }
-.livros-principais
+
+.logos
 {
-   
- display: grid;
-    grid-template-columns: repeat(3, 20%);
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between ;
+}
+.links
+{
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    gap:50px 200px;
 
-    gap: 10%;
+}
 
-    justify-content: center;
-    
+.links h4
+{
+    color: var(--cor-destaque);
+    margin-bottom: 20px;
+}
+
+.info-links
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info-img
+{
+    display: flex;
+    justify-content: space-between;
+
+}
+.baixo, .baixo-info
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
 }
