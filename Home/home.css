@@ -1,6 +1,7 @@
 /* Conteúdo principal */
 
 /* Primeiro banner */
+
 .banner-principal {
     color: var(--branco);
 
@@ -9,7 +10,9 @@
     background-image: url(../imgs/banner-principal-home.png);
     background-size: cover;
 
-    /* overflow: hidden;  evita que os elementos transbordem */
+    /* background-repeat: no-repeat; */
+
+    /* overflow: hidden; evita que os elementos transbordem */
 
     display: flex;
     align-items: center;
@@ -26,7 +29,6 @@
 
     align-items: flex-start;
     justify-content: center;
-
     gap: 50px;
 }
 
@@ -129,9 +131,9 @@
 }
 
 .beneficio-icone {
-
     border: 4px solid var(--cor-destaque);
     background-color: var(--branco);
+
     border-radius: 50%;
 
     width: 30%;
